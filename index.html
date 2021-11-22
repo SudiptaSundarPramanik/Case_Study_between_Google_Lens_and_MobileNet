@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <title>Case Study Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+    <div class="container">
+        <center>
+            <h4 style="text-align: center;font-family: 'Lexend Tera', sans-serif;">
+                <span style="color: red; font-size: 20px;">STUDY &nbsp; BETWEEN &nbsp; GOOGLE &nbsp; LENS &nbsp; AND &nbsp; MOBILENET<br>
+                </span>
+                GOOGLE &nbsp; LENS<img src="google lens.png"><br>
+                <h4 style="color: red; text-align: center; font-family: 'Lexend Tera', sans-serif;">VS</h6>
+                    <button class="btn btn-primary">Mobilenet</button><br>
+                </h4>
+        </center>
+        <ol style="padding: 0px;">
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="bottle.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Water bottle
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Water bottle
+                    <span></span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Both were equally accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="bag.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Bag
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - School Bag 
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was more accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="copy.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Copy
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - City
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="eraser.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Eraser
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Eraser
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Both were equally accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="headphones.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Headphones
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Almirah
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="mouse.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Mouse
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Mouse
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Both were equally accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="paper.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Sheet
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Sheet
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Both gave wrong results
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="pen.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Pen
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Bed Sheet
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="pencil.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Pencil
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Bed Sheet
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="text_image_and_result col-xs-12" style="background-color: grey;">
+
+                <li class="col-sm-4 xs-12">
+                    <b>Test Image - </b>
+                    <img src="pencilbox.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>GOOGLE LENS</b> - Pencil Box
+                    <span></span>
+                </h5>
+
+                <h5 class="col-sm-4 xs-12">
+                    Output on <b>Mobilenet Model</b> - Bed Sheet
+                    <span></span>
+                </h5>
+
+                <br><br>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4> Google Lens was accurate
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+            </ol>
+        </div>
+        <h4 class="btn btn-primary" id="result">
+            I have tested 10 images.<br>
+            Google Lens identified 8 out of 10 images more accurately than MobileNet.<br>
+            On the other hand, MobileNet identified 4 out of 10 images with less accuracy<br>
+            than Google Lens
+        </h4>
+            <br>
+    </body>
+</html>
